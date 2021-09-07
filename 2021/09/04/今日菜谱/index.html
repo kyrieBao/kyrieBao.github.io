@@ -66,7 +66,7 @@
 <body>
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
+  <div class="container" style="max-width:120rem">
     <a class="navbar-brand"
        href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
@@ -157,8 +157,9 @@
   </div>
 </nav>
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.jpg') no-repeat center center;
+         style="background: url('/img/default.jgp') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -361,7 +362,7 @@
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div>kyrie的博客|记录心路历程</div> 
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>  
   </div>
   
   <div class="statistics">
@@ -391,40 +392,13 @@
 
 
   
-  <!-- 备案信息 -->
-  <div class="beian">
-    <span>
-      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
-        京ICP证123456号
-      </a>
-    </span>
-    
-      
-        <span>
-          <a
-            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
-            rel="nofollow noopener"
-            class="beian-police"
-            target="_blank"
-          >
-            
-              <span style="visibility: hidden; width: 0">|</span>
-              <img src="/img/police_beian.png" srcset="/img/loading.gif" lazyload alt="police-icon"/>
-            
-            <span>京公网安备12345678号</span>
-          </a>
-        </span>
-      
-    
-  </div>
-
 
   
-  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  	<span id="timeDate" style="font-size='0.85rem'">载入天数...</span><span id="times">载入时分秒...</span>
   <script>
     var now = new Date();
     function createtime() {
-        var grt = new Date("06/09/2021 17:38:00"); //在此处修改你的建站时间
+        var grt = new Date("09/06/2021 17:38:00"); //在此处修改你的建站时间
         now.setTime(now.getTime() + 250);
         days = (now - grt) / 1000 / 60 / 60 / 24;
         dnum = Math.floor(days);
@@ -552,9 +526,13 @@
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/js/boot.js" ></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
  <!--动态线条背景-->
  <script type="text/javascript"
    color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
  </script>
+ <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<!--引入小心心特效-->
+<script src="https://cdn.jsdelivr.net/gh/Sanarous/files@1.151/js/clicklove.js"></script>
+
 </html>
